@@ -1,4 +1,4 @@
-const {s, calculateSum} =require("./sum.js");                  //for sum.js.     // for the type commonjs
-const {multiplication} = require("./multiply.js");
+const { s, calculateSum } = require("./sum.js"); //for sum.js.     // for the type commonjs
+const { multiplication } = require("./multiply.js");
 
-module.exports= {s,calculateSum, multiplication};
+module.exports = { s, calculateSum, multiplication };
