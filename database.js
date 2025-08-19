@@ -1,9 +1,12 @@
+require("dotenv").config();
 const {MongoClient}=require("mongodb");
 
-const url = "mongodb+srv://sonud:senorita@cluster0.xekbnoh.mongodb.net/";
+const url = process.env.mongo_url;
+const dbName = process.env.dbName;
+
 const client=  new MongoClient(url);
 
-const dbName= "HelloWorld";
+
 
 async function main(){
     await client.connect();
